@@ -10,7 +10,7 @@ const connection = mysql.createPool({
     database: 'login',
   });
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Pagina principal')
   })
   app.get('/login', async(req, res) => { // req = request, peticion; res = respuesta
     const datos = req.query;
@@ -34,7 +34,7 @@ try {
 
   })
   app.get('/validar', (req, res) => {
-    res.send('Hello World!')
+    res.send('Pagina principal')
   })
 
 // Ruta de prueba
